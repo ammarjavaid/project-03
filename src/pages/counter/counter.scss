@@ -1,0 +1,60 @@
+.counter{
+    margin-top: 5rem;
+    position: relative;
+    @media screen and (max-width: 1155px) {
+        // margin-top: 14rem;
+    }
+    @media screen and (max-width: 991px) {
+        // margin-top: 30rem;
+    }
+    @media screen and (max-width: 768px) {
+        // margin-top: 38rem;
+    }
+    @media screen and (max-width: 650px) {
+        // margin-top: 78rem;
+    }
+    &::after{
+        background-image: url(../../components/images/some-facts-bg.png);
+        height: 50vh !important;
+        @media screen and (max-width: 768px) {
+            height: 60vh !important;
+        }
+        @media screen and (max-width: 400px) {
+            height: 70vh !important;
+        }
+    }
+    .grid4{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 50vh;
+        place-items: center;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            height: 60vh;
+        }
+        @media screen and (max-width: 400px) {
+            grid-template-columns: repeat(1, 1fr);
+            height: 70vh;
+            gap: 2rem;
+        }
+        h1{
+            margin: 0;
+            font-size: 30px;
+            @media screen and (max-width: 991px) {
+                font-size: 25px;
+            }
+            @media screen and (max-width: 850px) {
+                font-size: 18px;
+            }
+        }
+        h3{
+            @media screen and (max-width: 991px) {
+                font-size: 16px;
+            }
+            @media screen and (max-width: 850px) {
+                font-size: 14px;
+            }
+        }
+    }
+}
